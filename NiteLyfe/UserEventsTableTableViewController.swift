@@ -10,9 +10,10 @@ import UIKit
 
 class UserEventsTableTableViewController: UITableViewController {
 
-    
+    let reuseIdentifier = "eventCell"
     var numRows = 5 //Needs to be a dynamically set amount
     //Also need to create an array of events to be sent as items
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,8 +29,13 @@ class UserEventsTableTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // MARK: - Table view data source
-
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! UEventsTableViewCell
+        
+        
+        return cell
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1

@@ -53,10 +53,10 @@ class BusinessTableViewController: UITableViewController {
         return self.sections[section]
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "cellToDetail", sender: self)
         
-    }
+    }*/
     
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! BusCellDetailViewController
