@@ -283,7 +283,7 @@
                         <rightBarButtonItems>
                             <barButtonItem title="Logout" id="nVI-iI-MgC">
                                 <connections>
-                                    <segue destination="Fp3-sD-0G6" kind="showDetail" id="G0f-Ab-jFf"/>
+                                    <segue destination="bdH-OQ-nkr" kind="unwind" unwindAction="unwindToVCWithSegue:" id="bYg-fn-S6j"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="edit" id="2WN-kD-ArQ"/>
@@ -292,6 +292,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6h-26-HYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="bdH-OQ-nkr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2532" y="1480"/>
         </scene>
@@ -319,7 +320,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="nMG-MF-fhJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" id="nMG-MF-fhJ">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nMG-MF-fhJ" id="hTW-Rj-Qaq">
