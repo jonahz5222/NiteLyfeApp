@@ -7,12 +7,21 @@
 //
 
 import UIKit
-
+import MapKit
 class UserInitialViewController: UIViewController {
 
+    
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let regionRadius:CLLocationDegrees = 2000
+        let initialLocation:CLLocationCoordinate2D = CLLocationCoordinate2DMake(38.951705, -92.334072)
+        // 1000 meters: alittle more than half a mile
+        mapView.setRegion(MKCoordinateRegionMakeWithDistance(initialLocation, regionRadius, regionRadius), animated: true)
+        
+        let myPin = pinAnnotation(title: "Tiger Hacks", subtitle:"Subtitle", coordinate: initialLocation)
+        
+        mapView.addAnnotation(myPin)
         // Do any additional setup after loading the view.
     }
 

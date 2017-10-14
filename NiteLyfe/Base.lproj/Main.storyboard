@@ -52,24 +52,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" ambiguous="YES" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uW-BP-shr">
-                                <rect key="frame" x="41" y="113" width="292" height="440"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="5kQ-pa-o6p">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="574"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8uW-BP-shr" firstAttribute="centerX" secondItem="uBL-RM-SBQ" secondAttribute="centerX" id="7SJ-8w-NXe"/>
-                            <constraint firstItem="8uW-BP-shr" firstAttribute="centerY" secondItem="uBL-RM-SBQ" secondAttribute="centerY" id="LXx-da-guZ"/>
+                            <constraint firstItem="5kQ-pa-o6p" firstAttribute="leading" secondItem="q2W-Rc-Em3" secondAttribute="leading" id="3XF-17-fIa"/>
+                            <constraint firstItem="q2W-Rc-Em3" firstAttribute="bottom" secondItem="5kQ-pa-o6p" secondAttribute="bottom" id="4yd-ou-tLN"/>
+                            <constraint firstItem="q2W-Rc-Em3" firstAttribute="top" secondItem="5kQ-pa-o6p" secondAttribute="top" constant="20" id="RuO-t7-4pC"/>
+                            <constraint firstItem="q2W-Rc-Em3" firstAttribute="trailing" secondItem="5kQ-pa-o6p" secondAttribute="trailing" id="gOD-C0-QpP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="q2W-Rc-Em3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" id="aPF-go-bdF"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="5kQ-pa-o6p" id="3TS-hx-KOK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZe-jk-WpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1624.5" y="-205.5"/>
+            <point key="canvasLocation" x="1623.2" y="-205.54722638680661"/>
         </scene>
         <!--Business Table View Controller-->
         <scene sceneID="hyn-32-Fje">
