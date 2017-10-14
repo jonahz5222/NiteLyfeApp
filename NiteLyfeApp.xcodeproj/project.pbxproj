@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52FBEB619C7181F44ED447D0 /* Pods_NiteLyfeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB795C8A7DD3C306D8297D1 /* Pods_NiteLyfeApp.framework */; };
 		83A1A20E1F91B47700BE6BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */; };
 		83A1A2131F91B47700BE6BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1A2111F91B47700BE6BE5 /* Main.storyboard */; };
 		83A1A2161F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2141F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld */; };
@@ -24,6 +25,7 @@
 		83A1A2511F9277B100BE6BE5 /* UserEventsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2501F9277B100BE6BE5 /* UserEventsTableTableViewController.swift */; };
 		83A1A2531F927B5700BE6BE5 /* UserCellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2521F927B5700BE6BE5 /* UserCellDetailViewController.swift */; };
 		83A1A2551F927E1200BE6BE5 /* UEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2541F927E1200BE6BE5 /* UEventsTableViewCell.swift */; };
+		83A1A28B1F928E7B00BE6BE5 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 83A1A28A1F928E7B00BE6BE5 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,13 @@
 		83A1A2501F9277B100BE6BE5 /* UserEventsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEventsTableTableViewController.swift; sourceTree = "<group>"; };
 		83A1A2521F927B5700BE6BE5 /* UserCellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellDetailViewController.swift; sourceTree = "<group>"; };
 		83A1A2541F927E1200BE6BE5 /* UEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEventsTableViewCell.swift; sourceTree = "<group>"; };
+		83A1A2831F928B2D00BE6BE5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A1A2861F928B5E00BE6BE5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A1A2871F928B5E00BE6BE5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A1A28A1F928E7B00BE6BE5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8778C65971FF7B0013E49D4A /* Pods-NiteLyfeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteLyfeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DAB795C8A7DD3C306D8297D1 /* Pods_NiteLyfeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiteLyfeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD85C3122523702658B7F633 /* Pods-NiteLyfeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteLyfeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FBEB619C7181F44ED447D0 /* Pods_NiteLyfeApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,13 +104,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D4A5AD788014FC935C448F6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8778C65971FF7B0013E49D4A /* Pods-NiteLyfeApp.debug.xcconfig */,
+				DD85C3122523702658B7F633 /* Pods-NiteLyfeApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		83A1A2011F91B47700BE6BE5 = {
 			isa = PBXGroup;
 			children = (
+				83A1A28A1F928E7B00BE6BE5 /* Podfile */,
 				83A1A20C1F91B47700BE6BE5 /* NiteLyfe */,
 				83A1A2241F91B47700BE6BE5 /* NiteLyfeTests */,
 				83A1A22F1F91B47700BE6BE5 /* NiteLyfeUITests */,
 				83A1A20B1F91B47700BE6BE5 /* Products */,
+				83A1A2711F928AA300BE6BE5 /* Frameworks */,
+				3D4A5AD788014FC935C448F6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,6 +177,17 @@
 			path = NiteLyfeUITests;
 			sourceTree = "<group>";
 		};
+		83A1A2711F928AA300BE6BE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83A1A2861F928B5E00BE6BE5 /* FBSDKLoginKit.framework */,
+				83A1A2871F928B5E00BE6BE5 /* FBSDKShareKit.framework */,
+				83A1A2831F928B2D00BE6BE5 /* FBSDKCoreKit.framework */,
+				DAB795C8A7DD3C306D8297D1 /* Pods_NiteLyfeApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A1A2351F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeApp" */;
 			buildPhases = (
+				6CF8E32DC146FAFA5DB7DB2C /* [CP] Check Pods Manifest.lock */,
 				83A1A2061F91B47700BE6BE5 /* Sources */,
 				83A1A2071F91B47700BE6BE5 /* Frameworks */,
 				83A1A2081F91B47700BE6BE5 /* Resources */,
+				BB52B6F07E1A9CF39D6F8D7F /* [CP] Embed Pods Frameworks */,
+				3947F79CF53CF3366165D5C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +300,7 @@
 			files = (
 				83A1A21B1F91B47700BE6BE5 /* LaunchScreen.storyboard in Resources */,
 				83A1A2181F91B47700BE6BE5 /* Assets.xcassets in Resources */,
+				83A1A28B1F928E7B00BE6BE5 /* Podfile in Resources */,
 				83A1A2131F91B47700BE6BE5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +320,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3947F79CF53CF3366165D5C4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CF8E32DC146FAFA5DB7DB2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NiteLyfeApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB52B6F07E1A9CF39D6F8D7F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		83A1A2061F91B47700BE6BE5 /* Sources */ = {
@@ -464,6 +563,7 @@
 		};
 		83A1A2361F91B47700BE6BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8778C65971FF7B0013E49D4A /* Pods-NiteLyfeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,6 +578,7 @@
 		};
 		83A1A2371F91B47700BE6BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD85C3122523702658B7F633 /* Pods-NiteLyfeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

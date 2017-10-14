@@ -14,7 +14,7 @@
         <!--Login View Controller-->
         <scene sceneID="e6p-HH-6V9">
             <objects>
-                <viewController id="Fp3-sD-0G6" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="Fp3-sD-0G6" customClass="LoginViewController" customModule="NiteLyfeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nTr-TC-WoF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
