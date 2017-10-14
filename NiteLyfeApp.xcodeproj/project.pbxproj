@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		83A1A20E1F91B47700BE6BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */; };
-		83A1A2101F91B47700BE6BE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A20F1F91B47700BE6BE5 /* ViewController.swift */; };
 		83A1A2131F91B47700BE6BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1A2111F91B47700BE6BE5 /* Main.storyboard */; };
 		83A1A2161F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2141F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld */; };
 		83A1A2181F91B47700BE6BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83A1A2171F91B47700BE6BE5 /* Assets.xcassets */; };
 		83A1A21B1F91B47700BE6BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1A2191F91B47700BE6BE5 /* LaunchScreen.storyboard */; };
 		83A1A2261F91B47700BE6BE5 /* NiteLyfeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2251F91B47700BE6BE5 /* NiteLyfeTests.swift */; };
 		83A1A2311F91B47700BE6BE5 /* NiteLyfeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2301F91B47700BE6BE5 /* NiteLyfeUITests.swift */; };
+		83A1A23F1F91C13800BE6BE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A23E1F91C13800BE6BE5 /* LoginViewController.swift */; };
+		83A1A2431F91C1ED00BE6BE5 /* UserInitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2421F91C1ED00BE6BE5 /* UserInitialViewController.swift */; };
+		83A1A2451F91C35A00BE6BE5 /* BusinessTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2441F91C35A00BE6BE5 /* BusinessTableViewController.swift */; };
+		83A1A2471F91C4D700BE6BE5 /* BEventsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2461F91C4D700BE6BE5 /* BEventsTableViewCell.swift */; };
+		83A1A2491F91CE3E00BE6BE5 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2481F91CE3E00BE6BE5 /* NewEventViewController.swift */; };
+		83A1A24B1F92544800BE6BE5 /* BusinessProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A24A1F92544800BE6BE5 /* BusinessProfileViewController.swift */; };
+		83A1A24D1F925B3100BE6BE5 /* BusCellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A24C1F925B3100BE6BE5 /* BusCellDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +41,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		83A1A20A1F91B47700BE6BE5 /* NiteLyfe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiteLyfe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A1A20A1F91B47700BE6BE5 /* NiteLyfeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiteLyfeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83A1A20F1F91B47700BE6BE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		83A1A2121F91B47700BE6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83A1A2151F91B47700BE6BE5 /* NiteLyfe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NiteLyfe.xcdatamodel; sourceTree = "<group>"; };
 		83A1A2171F91B47700BE6BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83A1A21A1F91B47700BE6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83A1A21C1F91B47700BE6BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83A1A2211F91B47700BE6BE5 /* NiteLyfeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiteLyfeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A1A2211F91B47700BE6BE5 /* NiteLyfeAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiteLyfeAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1A2251F91B47700BE6BE5 /* NiteLyfeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiteLyfeTests.swift; sourceTree = "<group>"; };
 		83A1A2271F91B47700BE6BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		83A1A22C1F91B47700BE6BE5 /* NiteLyfeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiteLyfeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83A1A22C1F91B47700BE6BE5 /* NiteLyfeAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NiteLyfeAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1A2301F91B47700BE6BE5 /* NiteLyfeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiteLyfeUITests.swift; sourceTree = "<group>"; };
 		83A1A2321F91B47700BE6BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83A1A23E1F91C13800BE6BE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		83A1A2421F91C1ED00BE6BE5 /* UserInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInitialViewController.swift; sourceTree = "<group>"; };
+		83A1A2441F91C35A00BE6BE5 /* BusinessTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewController.swift; sourceTree = "<group>"; };
+		83A1A2461F91C4D700BE6BE5 /* BEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BEventsTableViewCell.swift; sourceTree = "<group>"; };
+		83A1A2481F91CE3E00BE6BE5 /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		83A1A24A1F92544800BE6BE5 /* BusinessProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileViewController.swift; sourceTree = "<group>"; };
+		83A1A24C1F925B3100BE6BE5 /* BusCellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCellDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +101,9 @@
 		83A1A20B1F91B47700BE6BE5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				83A1A20A1F91B47700BE6BE5 /* NiteLyfe.app */,
-				83A1A2211F91B47700BE6BE5 /* NiteLyfeTests.xctest */,
-				83A1A22C1F91B47700BE6BE5 /* NiteLyfeUITests.xctest */,
+				83A1A20A1F91B47700BE6BE5 /* NiteLyfeApp.app */,
+				83A1A2211F91B47700BE6BE5 /* NiteLyfeAppTests.xctest */,
+				83A1A22C1F91B47700BE6BE5 /* NiteLyfeAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,11 +111,17 @@
 		83A1A20C1F91B47700BE6BE5 /* NiteLyfe */ = {
 			isa = PBXGroup;
 			children = (
+				83A1A2441F91C35A00BE6BE5 /* BusinessTableViewController.swift */,
+				83A1A2421F91C1ED00BE6BE5 /* UserInitialViewController.swift */,
 				83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */,
-				83A1A20F1F91B47700BE6BE5 /* ViewController.swift */,
 				83A1A2111F91B47700BE6BE5 /* Main.storyboard */,
+				83A1A24C1F925B3100BE6BE5 /* BusCellDetailViewController.swift */,
+				83A1A24A1F92544800BE6BE5 /* BusinessProfileViewController.swift */,
+				83A1A2481F91CE3E00BE6BE5 /* NewEventViewController.swift */,
+				83A1A2461F91C4D700BE6BE5 /* BEventsTableViewCell.swift */,
 				83A1A2171F91B47700BE6BE5 /* Assets.xcassets */,
 				83A1A2191F91B47700BE6BE5 /* LaunchScreen.storyboard */,
+				83A1A23E1F91C13800BE6BE5 /* LoginViewController.swift */,
 				83A1A21C1F91B47700BE6BE5 /* Info.plist */,
 				83A1A2141F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld */,
 			);
@@ -131,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		83A1A2091F91B47700BE6BE5 /* NiteLyfe */ = {
+		83A1A2091F91B47700BE6BE5 /* NiteLyfeApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83A1A2351F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfe" */;
+			buildConfigurationList = 83A1A2351F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeApp" */;
 			buildPhases = (
 				83A1A2061F91B47700BE6BE5 /* Sources */,
 				83A1A2071F91B47700BE6BE5 /* Frameworks */,
@@ -143,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = NiteLyfe;
+			name = NiteLyfeApp;
 			productName = NiteLyfe;
-			productReference = 83A1A20A1F91B47700BE6BE5 /* NiteLyfe.app */;
+			productReference = 83A1A20A1F91B47700BE6BE5 /* NiteLyfeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		83A1A2201F91B47700BE6BE5 /* NiteLyfeTests */ = {
+		83A1A2201F91B47700BE6BE5 /* NiteLyfeAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83A1A2381F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeTests" */;
+			buildConfigurationList = 83A1A2381F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeAppTests" */;
 			buildPhases = (
 				83A1A21D1F91B47700BE6BE5 /* Sources */,
 				83A1A21E1F91B47700BE6BE5 /* Frameworks */,
@@ -161,14 +179,14 @@
 			dependencies = (
 				83A1A2231F91B47700BE6BE5 /* PBXTargetDependency */,
 			);
-			name = NiteLyfeTests;
+			name = NiteLyfeAppTests;
 			productName = NiteLyfeTests;
-			productReference = 83A1A2211F91B47700BE6BE5 /* NiteLyfeTests.xctest */;
+			productReference = 83A1A2211F91B47700BE6BE5 /* NiteLyfeAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		83A1A22B1F91B47700BE6BE5 /* NiteLyfeUITests */ = {
+		83A1A22B1F91B47700BE6BE5 /* NiteLyfeAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 83A1A23B1F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeUITests" */;
+			buildConfigurationList = 83A1A23B1F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeAppUITests" */;
 			buildPhases = (
 				83A1A2281F91B47700BE6BE5 /* Sources */,
 				83A1A2291F91B47700BE6BE5 /* Frameworks */,
@@ -179,9 +197,9 @@
 			dependencies = (
 				83A1A22E1F91B47700BE6BE5 /* PBXTargetDependency */,
 			);
-			name = NiteLyfeUITests;
+			name = NiteLyfeAppUITests;
 			productName = NiteLyfeUITests;
-			productReference = 83A1A22C1F91B47700BE6BE5 /* NiteLyfeUITests.xctest */;
+			productReference = 83A1A22C1F91B47700BE6BE5 /* NiteLyfeAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -210,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83A1A2051F91B47700BE6BE5 /* Build configuration list for PBXProject "NiteLyfe" */;
+			buildConfigurationList = 83A1A2051F91B47700BE6BE5 /* Build configuration list for PBXProject "NiteLyfeApp" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				83A1A2091F91B47700BE6BE5 /* NiteLyfe */,
-				83A1A2201F91B47700BE6BE5 /* NiteLyfeTests */,
-				83A1A22B1F91B47700BE6BE5 /* NiteLyfeUITests */,
+				83A1A2091F91B47700BE6BE5 /* NiteLyfeApp */,
+				83A1A2201F91B47700BE6BE5 /* NiteLyfeAppTests */,
+				83A1A22B1F91B47700BE6BE5 /* NiteLyfeAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -262,9 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83A1A2431F91C1ED00BE6BE5 /* UserInitialViewController.swift in Sources */,
+				83A1A23F1F91C13800BE6BE5 /* LoginViewController.swift in Sources */,
+				83A1A24B1F92544800BE6BE5 /* BusinessProfileViewController.swift in Sources */,
+				83A1A2451F91C35A00BE6BE5 /* BusinessTableViewController.swift in Sources */,
+				83A1A24D1F925B3100BE6BE5 /* BusCellDetailViewController.swift in Sources */,
 				83A1A2161F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld in Sources */,
-				83A1A2101F91B47700BE6BE5 /* ViewController.swift in Sources */,
+				83A1A2491F91CE3E00BE6BE5 /* NewEventViewController.swift in Sources */,
 				83A1A20E1F91B47700BE6BE5 /* AppDelegate.swift in Sources */,
+				83A1A2471F91C4D700BE6BE5 /* BEventsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +313,12 @@
 /* Begin PBXTargetDependency section */
 		83A1A2231F91B47700BE6BE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83A1A2091F91B47700BE6BE5 /* NiteLyfe */;
+			target = 83A1A2091F91B47700BE6BE5 /* NiteLyfeApp */;
 			targetProxy = 83A1A2221F91B47700BE6BE5 /* PBXContainerItemProxy */;
 		};
 		83A1A22E1F91B47700BE6BE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 83A1A2091F91B47700BE6BE5 /* NiteLyfe */;
+			target = 83A1A2091F91B47700BE6BE5 /* NiteLyfeApp */;
 			targetProxy = 83A1A22D1F91B47700BE6BE5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,7 +490,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiteLyfe.app/NiteLyfe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiteLyfeApp.app/NiteLyfeApp";
 			};
 			name = Debug;
 		};
@@ -482,7 +506,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiteLyfe.app/NiteLyfe";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NiteLyfeApp.app/NiteLyfeApp";
 			};
 			name = Release;
 		};
@@ -519,7 +543,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		83A1A2051F91B47700BE6BE5 /* Build configuration list for PBXProject "NiteLyfe" */ = {
+		83A1A2051F91B47700BE6BE5 /* Build configuration list for PBXProject "NiteLyfeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83A1A2331F91B47700BE6BE5 /* Debug */,
@@ -528,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83A1A2351F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfe" */ = {
+		83A1A2351F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83A1A2361F91B47700BE6BE5 /* Debug */,
@@ -537,7 +561,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83A1A2381F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeTests" */ = {
+		83A1A2381F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83A1A2391F91B47700BE6BE5 /* Debug */,
@@ -546,7 +570,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83A1A23B1F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeUITests" */ = {
+		83A1A23B1F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83A1A23C1F91B47700BE6BE5 /* Debug */,

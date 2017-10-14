@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:NiteLyfe.xcodeproj">
+      location = "self:/Users/jonahzukosky/Desktop/TigerHacks/NiteLyfe/NiteLyfeApp.xcodeproj">
    </FileRef>
 </Workspace>
