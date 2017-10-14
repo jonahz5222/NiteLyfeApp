@@ -1,18 +1,18 @@
 //
-//  BusinessTableViewController.swift
-//  NiteLyfe
+//  UserEventsTableTableViewController.swift
+//  NiteLyfeApp
 //
-//  Created by Jonah Zukosky on 10/13/17.
+//  Created by Jonah Zukosky on 10/14/17.
 //  Copyright © 2017 Jonah Zukosky. All rights reserved.
 //
 
 import UIKit
 
-class BusinessTableViewController: UITableViewController {
+class UserEventsTableTableViewController: UITableViewController {
 
-    let reuseIdentifier = "eventCell"
-    var numCells = 5 //Later Change to be dynamic, should be an integer array of all events, pulled from database
-    let sections = ["Current Events","Past Events"]
+    
+    var numRows = 5 //Needs to be a dynamically set amount
+    //Also need to create an array of events to be sent as items
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,62 +28,36 @@ class BusinessTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
-    
-    
-    
-    //Initializes each cell
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! BEventsTableViewCell
-        
-        
-        return cell
-    }
-    //Sets Number of Rows in Each Section
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return numCells
-    }
-    
-    //Sets Number of Sections
+    // MARK: - Table view data source
+
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return self.sections.count
+        // #warning Incomplete implementation, return the number of sections
+        return 1
     }
-    //Sets Section Headers
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.sections[section]
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return numRows
     }
-    
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "cellToDetail", sender: self)
-        
-    }
     
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    }*/
+   /* override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! BusCellDetailViewController
         
         
-     }*/
-    // MARK: - Table view data source
-
-   /* override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 2
     }*/
 
-    /*override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }*/
-
-    
-   /* override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
 
         return cell
-    }*/
-    
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.

@@ -21,6 +21,8 @@
 		83A1A2491F91CE3E00BE6BE5 /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2481F91CE3E00BE6BE5 /* NewEventViewController.swift */; };
 		83A1A24B1F92544800BE6BE5 /* BusinessProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A24A1F92544800BE6BE5 /* BusinessProfileViewController.swift */; };
 		83A1A24D1F925B3100BE6BE5 /* BusCellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A24C1F925B3100BE6BE5 /* BusCellDetailViewController.swift */; };
+		83A1A2511F9277B100BE6BE5 /* UserEventsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2501F9277B100BE6BE5 /* UserEventsTableTableViewController.swift */; };
+		83A1A2531F927B5700BE6BE5 /* UserCellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2521F927B5700BE6BE5 /* UserCellDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		83A1A2481F91CE3E00BE6BE5 /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
 		83A1A24A1F92544800BE6BE5 /* BusinessProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileViewController.swift; sourceTree = "<group>"; };
 		83A1A24C1F925B3100BE6BE5 /* BusCellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCellDetailViewController.swift; sourceTree = "<group>"; };
+		83A1A2501F9277B100BE6BE5 /* UserEventsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEventsTableTableViewController.swift; sourceTree = "<group>"; };
+		83A1A2521F927B5700BE6BE5 /* UserCellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				83A1A2421F91C1ED00BE6BE5 /* UserInitialViewController.swift */,
 				83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */,
 				83A1A2111F91B47700BE6BE5 /* Main.storyboard */,
+				83A1A2521F927B5700BE6BE5 /* UserCellDetailViewController.swift */,
+				83A1A2501F9277B100BE6BE5 /* UserEventsTableTableViewController.swift */,
 				83A1A24C1F925B3100BE6BE5 /* BusCellDetailViewController.swift */,
 				83A1A24A1F92544800BE6BE5 /* BusinessProfileViewController.swift */,
 				83A1A2481F91CE3E00BE6BE5 /* NewEventViewController.swift */,
@@ -283,11 +289,13 @@
 				83A1A2431F91C1ED00BE6BE5 /* UserInitialViewController.swift in Sources */,
 				83A1A23F1F91C13800BE6BE5 /* LoginViewController.swift in Sources */,
 				83A1A24B1F92544800BE6BE5 /* BusinessProfileViewController.swift in Sources */,
+				83A1A2531F927B5700BE6BE5 /* UserCellDetailViewController.swift in Sources */,
 				83A1A2451F91C35A00BE6BE5 /* BusinessTableViewController.swift in Sources */,
 				83A1A24D1F925B3100BE6BE5 /* BusCellDetailViewController.swift in Sources */,
 				83A1A2161F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld in Sources */,
 				83A1A2491F91CE3E00BE6BE5 /* NewEventViewController.swift in Sources */,
 				83A1A20E1F91B47700BE6BE5 /* AppDelegate.swift in Sources */,
+				83A1A2511F9277B100BE6BE5 /* UserEventsTableTableViewController.swift in Sources */,
 				83A1A2471F91C4D700BE6BE5 /* BEventsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
