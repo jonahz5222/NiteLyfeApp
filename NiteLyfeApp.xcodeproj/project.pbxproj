@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		52FBEB619C7181F44ED447D0 /* Pods_NiteLyfeApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAB795C8A7DD3C306D8297D1 /* Pods_NiteLyfeApp.framework */; };
+		193B998D1F92F807000B6ECE /* pinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193B998C1F92F807000B6ECE /* pinAnnotation.swift */; };
+		193B99AF1F92FBD3000B6ECE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193B99AE1F92FBBC000B6ECE /* FBSDKCoreKit.framework */; };
+		193B99B01F92FBD3000B6ECE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193B99AD1F92FBBB000B6ECE /* FBSDKLoginKit.framework */; };
+		193B99B21F92FE32000B6ECE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193B99B11F92FE21000B6ECE /* Bolts.framework */; };
 		83A1A20E1F91B47700BE6BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */; };
 		83A1A2131F91B47700BE6BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1A2111F91B47700BE6BE5 /* Main.storyboard */; };
 		83A1A2161F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2141F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld */; };
@@ -46,6 +49,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		193B998C1F92F807000B6ECE /* pinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = pinAnnotation.swift; sourceTree = "<group>"; };
+		193B99901F92F8A1000B6ECE /* NiteLyfeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiteLyfeApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		193B99951F92FB1E000B6ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		193B99961F92FB1E000B6ECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		193B99981F92FB1E000B6ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		193B999A1F92FB1E000B6ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		193B999B1F92FB1E000B6ECE /* BEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BEventsTableViewCell.swift; sourceTree = "<group>"; };
+		193B999C1F92FB1E000B6ECE /* BusCellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusCellDetailViewController.swift; sourceTree = "<group>"; };
+		193B999D1F92FB1E000B6ECE /* BusinessProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessProfileViewController.swift; sourceTree = "<group>"; };
+		193B999E1F92FB1E000B6ECE /* BusinessTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewController.swift; sourceTree = "<group>"; };
+		193B999F1F92FB1E000B6ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		193B99A01F92FB1E000B6ECE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		193B99A11F92FB1E000B6ECE /* NewEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
+		193B99A31F92FB1E000B6ECE /* NiteLyfe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NiteLyfe.xcdatamodel; sourceTree = "<group>"; };
+		193B99A41F92FB1E000B6ECE /* NiteLyfeApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NiteLyfeApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		193B99A51F92FB1E000B6ECE /* pinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinAnnotation.swift; sourceTree = "<group>"; };
+		193B99A61F92FB1E000B6ECE /* UEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEventsTableViewCell.swift; sourceTree = "<group>"; };
+		193B99A71F92FB1E000B6ECE /* UserCellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellDetailViewController.swift; sourceTree = "<group>"; };
+		193B99A81F92FB1E000B6ECE /* UserEventsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEventsTableTableViewController.swift; sourceTree = "<group>"; };
+		193B99A91F92FB1E000B6ECE /* UserInitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInitialViewController.swift; sourceTree = "<group>"; };
+		193B99AA1F92FB1E000B6ECE /* UserViewInitial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewInitial.swift; sourceTree = "<group>"; };
+		193B99AD1F92FBBB000B6ECE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		193B99AE1F92FBBC000B6ECE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		193B99B11F92FE21000B6ECE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		83A1A20A1F91B47700BE6BE5 /* NiteLyfeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiteLyfeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A1A2121F91B47700BE6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,13 +96,7 @@
 		83A1A2501F9277B100BE6BE5 /* UserEventsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEventsTableTableViewController.swift; sourceTree = "<group>"; };
 		83A1A2521F927B5700BE6BE5 /* UserCellDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellDetailViewController.swift; sourceTree = "<group>"; };
 		83A1A2541F927E1200BE6BE5 /* UEventsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UEventsTableViewCell.swift; sourceTree = "<group>"; };
-		83A1A2831F928B2D00BE6BE5 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83A1A2861F928B5E00BE6BE5 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83A1A2871F928B5E00BE6BE5 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1A28A1F928E7B00BE6BE5 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		8778C65971FF7B0013E49D4A /* Pods-NiteLyfeApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteLyfeApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp.debug.xcconfig"; sourceTree = "<group>"; };
-		DAB795C8A7DD3C306D8297D1 /* Pods_NiteLyfeApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NiteLyfeApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD85C3122523702658B7F633 /* Pods-NiteLyfeApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NiteLyfeApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52FBEB619C7181F44ED447D0 /* Pods_NiteLyfeApp.framework in Frameworks */,
+				193B99B21F92FE32000B6ECE /* Bolts.framework in Frameworks */,
+				193B99AF1F92FBD3000B6ECE /* FBSDKCoreKit.framework in Frameworks */,
+				193B99B01F92FBD3000B6ECE /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,13 +127,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D4A5AD788014FC935C448F6 /* Pods */ = {
+		193B99941F92FB1E000B6ECE /* NiteLyfe */ = {
 			isa = PBXGroup;
 			children = (
-				8778C65971FF7B0013E49D4A /* Pods-NiteLyfeApp.debug.xcconfig */,
-				DD85C3122523702658B7F633 /* Pods-NiteLyfeApp.release.xcconfig */,
+				193B99951F92FB1E000B6ECE /* AppDelegate.swift */,
+				193B99961F92FB1E000B6ECE /* Assets.xcassets */,
+				193B99971F92FB1E000B6ECE /* LaunchScreen.storyboard */,
+				193B99991F92FB1E000B6ECE /* Main.storyboard */,
+				193B999B1F92FB1E000B6ECE /* BEventsTableViewCell.swift */,
+				193B999C1F92FB1E000B6ECE /* BusCellDetailViewController.swift */,
+				193B999D1F92FB1E000B6ECE /* BusinessProfileViewController.swift */,
+				193B999E1F92FB1E000B6ECE /* BusinessTableViewController.swift */,
+				193B999F1F92FB1E000B6ECE /* Info.plist */,
+				193B99A01F92FB1E000B6ECE /* LoginViewController.swift */,
+				193B99A11F92FB1E000B6ECE /* NewEventViewController.swift */,
+				193B99A21F92FB1E000B6ECE /* NiteLyfe.xcdatamodeld */,
+				193B99A41F92FB1E000B6ECE /* NiteLyfeApp-Bridging-Header.h */,
+				193B99A51F92FB1E000B6ECE /* pinAnnotation.swift */,
+				193B99A61F92FB1E000B6ECE /* UEventsTableViewCell.swift */,
+				193B99A71F92FB1E000B6ECE /* UserCellDetailViewController.swift */,
+				193B99A81F92FB1E000B6ECE /* UserEventsTableTableViewController.swift */,
+				193B99A91F92FB1E000B6ECE /* UserInitialViewController.swift */,
+				193B99AA1F92FB1E000B6ECE /* UserViewInitial.swift */,
 			);
-			name = Pods;
+			path = NiteLyfe;
 			sourceTree = "<group>";
 		};
 		83A1A2011F91B47700BE6BE5 = {
@@ -122,7 +162,6 @@
 				83A1A22F1F91B47700BE6BE5 /* NiteLyfeUITests */,
 				83A1A20B1F91B47700BE6BE5 /* Products */,
 				83A1A2711F928AA300BE6BE5 /* Frameworks */,
-				3D4A5AD788014FC935C448F6 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +178,7 @@
 		83A1A20C1F91B47700BE6BE5 /* NiteLyfe */ = {
 			isa = PBXGroup;
 			children = (
+				193B998C1F92F807000B6ECE /* pinAnnotation.swift */,
 				83A1A2441F91C35A00BE6BE5 /* BusinessTableViewController.swift */,
 				83A1A2421F91C1ED00BE6BE5 /* UserInitialViewController.swift */,
 				83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */,
@@ -155,6 +195,10 @@
 				83A1A23E1F91C13800BE6BE5 /* LoginViewController.swift */,
 				83A1A21C1F91B47700BE6BE5 /* Info.plist */,
 				83A1A2141F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld */,
+				193B99901F92F8A1000B6ECE /* NiteLyfeApp-Bridging-Header.h */,
+				193B99B11F92FE21000B6ECE /* Bolts.framework */,
+				193B99AE1F92FBBC000B6ECE /* FBSDKCoreKit.framework */,
+				193B99AD1F92FBBB000B6ECE /* FBSDKLoginKit.framework */,
 			);
 			path = NiteLyfe;
 			sourceTree = "<group>";
@@ -180,10 +224,7 @@
 		83A1A2711F928AA300BE6BE5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83A1A2861F928B5E00BE6BE5 /* FBSDKLoginKit.framework */,
-				83A1A2871F928B5E00BE6BE5 /* FBSDKShareKit.framework */,
-				83A1A2831F928B2D00BE6BE5 /* FBSDKCoreKit.framework */,
-				DAB795C8A7DD3C306D8297D1 /* Pods_NiteLyfeApp.framework */,
+				193B99941F92FB1E000B6ECE /* NiteLyfe */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,12 +236,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 83A1A2351F91B47700BE6BE5 /* Build configuration list for PBXNativeTarget "NiteLyfeApp" */;
 			buildPhases = (
-				6CF8E32DC146FAFA5DB7DB2C /* [CP] Check Pods Manifest.lock */,
 				83A1A2061F91B47700BE6BE5 /* Sources */,
 				83A1A2071F91B47700BE6BE5 /* Frameworks */,
 				83A1A2081F91B47700BE6BE5 /* Resources */,
-				BB52B6F07E1A9CF39D6F8D7F /* [CP] Embed Pods Frameworks */,
-				3947F79CF53CF3366165D5C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +297,7 @@
 				TargetAttributes = {
 					83A1A2091F91B47700BE6BE5 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					83A1A2201F91B47700BE6BE5 = {
@@ -321,68 +360,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		3947F79CF53CF3366165D5C4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6CF8E32DC146FAFA5DB7DB2C /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NiteLyfeApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB52B6F07E1A9CF39D6F8D7F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
-				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NiteLyfeApp/Pods-NiteLyfeApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		83A1A2061F91B47700BE6BE5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -393,6 +370,7 @@
 				83A1A24B1F92544800BE6BE5 /* BusinessProfileViewController.swift in Sources */,
 				83A1A2531F927B5700BE6BE5 /* UserCellDetailViewController.swift in Sources */,
 				83A1A2451F91C35A00BE6BE5 /* BusinessTableViewController.swift in Sources */,
+				193B998D1F92F807000B6ECE /* pinAnnotation.swift in Sources */,
 				83A1A24D1F925B3100BE6BE5 /* BusCellDetailViewController.swift in Sources */,
 				83A1A2161F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld in Sources */,
 				83A1A2491F91CE3E00BE6BE5 /* NewEventViewController.swift in Sources */,
@@ -435,6 +413,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		193B99971F92FB1E000B6ECE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				193B99981F92FB1E000B6ECE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		193B99991F92FB1E000B6ECE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				193B999A1F92FB1E000B6ECE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		83A1A2111F91B47700BE6BE5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -563,14 +557,20 @@
 		};
 		83A1A2361F91B47700BE6BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8778C65971FF7B0013E49D4A /* Pods-NiteLyfeApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NiteLyfe",
+				);
 				INFOPLIST_FILE = NiteLyfe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jonah.NiteLyfe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NiteLyfe/NiteLyfeApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -578,14 +578,19 @@
 		};
 		83A1A2371F91B47700BE6BE5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD85C3122523702658B7F633 /* Pods-NiteLyfeApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NiteLyfe",
+				);
 				INFOPLIST_FILE = NiteLyfe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Jonah.NiteLyfe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "NiteLyfe/NiteLyfeApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -695,6 +700,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		193B99A21F92FB1E000B6ECE /* NiteLyfe.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				193B99A31F92FB1E000B6ECE /* NiteLyfe.xcdatamodel */,
+			);
+			currentVersion = 193B99A31F92FB1E000B6ECE /* NiteLyfe.xcdatamodel */;
+			path = NiteLyfe.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		83A1A2141F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

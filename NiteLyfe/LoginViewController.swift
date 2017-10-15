@@ -7,76 +7,66 @@
 //
 
 import UIKit
-import FacebookLogin
-import FBSDKLoginKit
 
-class LoginViewController: UIViewController {
-
-    var dict : [String : AnyObject]!
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
-    @IBAction func unwindToVC(segue: UIStoryboardSegue) {
-    }
     
-    override func viewDidLoad() {
+    let loginButton: FBSDKLoginButton = {
+        let button = FBSDKLoginButton()
+        button.readPermissions = ["email"]
+        return button
+    }()
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        //creating button
-        let loginButton = LoginButton(readPermissions: [ .publicProfile ])
-        loginButton.center = view.center
         
-        //adding it to view
         view.addSubview(loginButton)
+        loginButton.center = view.center
+        loginButton.delegate = self
         
-        //if the user is already logged in
-        if let accessToken = FBSDKAccessToken.current(){
-            getFBUserData()
-        }
-        // Do any additional setup after loading the view.
-    }
-    //when login button clicked
-    @objc func loginButtonClicked() {
-        let loginManager = LoginManager()
-        loginManager.logIn(readPermissions: [ .publicProfile ], viewController: self) { loginResult in
-            switch loginResult {
-            case .failed(let error):
-                print(error)
-            case .cancelled:
-                print("User cancelled login.")
-            case .success(let grantedPermissions, let declinedPermissions, let accessToken):
-                self.getFBUserData()
-            }
+        if let token = FBSDKAccessToken.current(){
+        //    fetchProfile()
         }
     }
     
-    //function is fetching the user data
-    func getFBUserData(){
-        if((FBSDKAccessToken.current()) != nil){
-            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
-                if (error == nil){
-                    self.dict = result as! [String : AnyObject]
-                    print(result!)
-                    print(self.dict)
-                }
-            })
+    
+   /* func fetchProfile()
+    {
+        print("fetch profile")
+        let parameters = ["fields": "email, first_name, last_name, picture.type(large)"]
+        FBSDKGraphRequest(graphPath: "me", parameters: parameters).start(completionHandler: { (connection, result, error) -> Void in
+            
+            if error != nil {
+                print(error)
+                return
+            }
+            
+            if let email = result?["email"] as? String {
+                print(email)
+                
+            }
+            if let picture = result!["picture"] as? NSDictionary, let data = picture["data"] as? NSDictionary, let url = data["url"] as? String{
+                print(url)
+            }
+            
         }
+    }*/
+    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+        print("complete login")
+       // fetchProfile()
+    }
+    
+    func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
+        
+    }
+    
+    func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {
+        
+        return true
+    }
+    override func didReceiveMemoryWarning()
+    {
+        super.didReceiveMemoryWarning()
     }
 }
-    
-
-
-   /* override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }*/
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
