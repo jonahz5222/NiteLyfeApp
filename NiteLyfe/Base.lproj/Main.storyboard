@@ -19,14 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCq-tQ-EKh">
-                                <rect key="frame" x="154" y="180" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="User Side"/>
-                                <connections>
-                                    <segue destination="VEf-dL-ypC" kind="show" id="Nfa-UC-C6L"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFh-Hx-8iC">
                                 <rect key="frame" x="139" y="376" width="96" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -39,6 +31,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="WNz-f2-np2"/>
                     </view>
+                    <connections>
+                        <segue destination="VEf-dL-ypC" kind="show" identifier="initUserSegue" id="uJL-UI-209"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a89-xv-k5z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,11 +80,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" id="4fg-2O-560" customClass="BEventsTableViewCell" customModule="NiteLyfeApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="detailButton" indentationWidth="10" reuseIdentifier="eventCell" id="4fg-2O-560" customClass="BEventsTableViewCell" customModule="NiteLyfeApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4fg-2O-560" id="1SN-Ce-T5o" customClass="BEventsTableViewCell" customModule="NiteLyfeApp" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="328" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
@@ -286,15 +281,14 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Profile" id="28b-Pw-seM">
                         <rightBarButtonItems>
-                            <barButtonItem title="Logout" id="nVI-iI-MgC">
-                                <connections>
-                                    <segue destination="bdH-OQ-nkr" kind="unwind" unwindAction="unwindToVCWithSegue:" id="bYg-fn-S6j"/>
-                                </connections>
-                            </barButtonItem>
+                            <barButtonItem title="Logout" id="nVI-iI-MgC"/>
                             <barButtonItem systemItem="edit" id="2WN-kD-ArQ"/>
                         </rightBarButtonItems>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="bdH-OQ-nkr" kind="unwind" identifier="unwindToLogin" unwindAction="unwindToMenuWithSegue:" id="ibp-i6-seK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6h-26-HYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="bdH-OQ-nkr" userLabel="Exit" sceneMemberID="exit"/>
@@ -309,21 +303,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hJU-Ej-Kfg">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mkE-yE-GE1">
                                 <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="nbv-hg-Qcm">
-                                        <barButtonItem key="rightBarButtonItem" title="Edit" id="ER2-DP-R7t"/>
-                                    </navigationItem>
+                                    <navigationItem title="Title" id="jXI-iK-un8"/>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hJU-Ej-Kfg" firstAttribute="leading" secondItem="DB0-79-18E" secondAttribute="leading" id="ZEy-Cw-p33"/>
-                            <constraint firstAttribute="trailing" secondItem="hJU-Ej-Kfg" secondAttribute="trailing" id="igd-ao-fjF"/>
-                            <constraint firstItem="hJU-Ej-Kfg" firstAttribute="top" secondItem="RYJ-mT-h2q" secondAttribute="top" id="raL-ER-r4l"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="RYJ-mT-h2q"/>
                     </view>
                     <toolbarItems/>

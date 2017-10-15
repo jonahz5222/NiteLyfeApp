@@ -27,8 +27,11 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         if let token = FBSDKAccessToken.current(){
         //    fetchProfile()
+         //   self.performSegue(withIdentifier: "initUserSegue", sender: nil)
         }
     }
+    
+    
     
     
    /* func fetchProfile()
@@ -54,13 +57,14 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }*/
     func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
         print("complete login")
+        
+        self.performSegue(withIdentifier: "initUserSegue", sender: nil)
        // fetchProfile()
     }
     
     func loginButtonDidLogOut(_ loginButton: FBSDKLoginButton!) {
-        
+        //print("logged out")
     }
-    
     func loginButtonWillLogin(_ loginButton: FBSDKLoginButton!) -> Bool {
         
         return true

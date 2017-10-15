@@ -12,6 +12,7 @@ class BusinessTableViewController: UITableViewController {
 
     let reuseIdentifier = "eventCell"
     var numCells = 5 //Later Change to be dynamic, should be an integer array of all events, pulled from database
+    var items = ["1","2","3","4","5"]
     let sections = ["Current Events","Past Events"]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +37,7 @@ class BusinessTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! BEventsTableViewCell
         
+        cell.textLabel?.text = items[indexPath.row]
         
         return cell
     }
@@ -53,10 +55,13 @@ class BusinessTableViewController: UITableViewController {
         return self.sections[section]
     }
     
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "cellToDetail", sender: self)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //performSegue(withIdentifier: "cellToDetail", sender: self)
         
-    }*/
+        let destination = BusCellDetailViewController()
+        destination.title = items[indexPath.row]
+        
+    }
     
     /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! BusCellDetailViewController
