@@ -341,6 +341,14 @@
                                     <segue destination="c8B-GJ-950" kind="show" id="YmR-2Y-hJu"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2T2-lC-ftA">
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2T2-lC-ftA" id="Jdc-QH-EVt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="Aph-qo-91Z" id="uhc-C5-j1C"/>
@@ -348,6 +356,9 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Current Events" id="0Sg-zm-MXz"/>
+                    <connections>
+                        <outlet property="listTableView" destination="KV2-uj-DmN" id="QRw-I3-oFk"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Z2-iz-iQ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -11,6 +11,7 @@
 		193B99AF1F92FBD3000B6ECE /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193B99AE1F92FBBC000B6ECE /* FBSDKCoreKit.framework */; };
 		193B99B01F92FBD3000B6ECE /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193B99AD1F92FBBB000B6ECE /* FBSDKLoginKit.framework */; };
 		193B99B21F92FE32000B6ECE /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 193B99B11F92FE21000B6ECE /* Bolts.framework */; };
+		424834AE1F93221D00FD54BB /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424834AD1F93221D00FD54BB /* EventModel.swift */; };
 		83A1A20E1F91B47700BE6BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */; };
 		83A1A2131F91B47700BE6BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83A1A2111F91B47700BE6BE5 /* Main.storyboard */; };
 		83A1A2161F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 83A1A2141F91B47700BE6BE5 /* NiteLyfe.xcdatamodeld */; };
@@ -73,6 +74,7 @@
 		193B99AD1F92FBBB000B6ECE /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		193B99AE1F92FBBC000B6ECE /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		193B99B11F92FE21000B6ECE /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		424834AD1F93221D00FD54BB /* EventModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventModel.swift; sourceTree = "<group>"; };
 		83A1A20A1F91B47700BE6BE5 /* NiteLyfeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NiteLyfeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83A1A20D1F91B47700BE6BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83A1A2121F91B47700BE6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 				193B99B11F92FE21000B6ECE /* Bolts.framework */,
 				193B99AE1F92FBBC000B6ECE /* FBSDKCoreKit.framework */,
 				193B99AD1F92FBBB000B6ECE /* FBSDKLoginKit.framework */,
+				424834AD1F93221D00FD54BB /* EventModel.swift */,
 			);
 			path = NiteLyfe;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				83A1A23F1F91C13800BE6BE5 /* LoginViewController.swift in Sources */,
 				83A1A24B1F92544800BE6BE5 /* BusinessProfileViewController.swift in Sources */,
 				83A1A2531F927B5700BE6BE5 /* UserCellDetailViewController.swift in Sources */,
+				424834AE1F93221D00FD54BB /* EventModel.swift in Sources */,
 				83A1A2451F91C35A00BE6BE5 /* BusinessTableViewController.swift in Sources */,
 				193B998D1F92F807000B6ECE /* pinAnnotation.swift in Sources */,
 				83A1A24D1F925B3100BE6BE5 /* BusCellDetailViewController.swift in Sources */,

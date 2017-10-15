@@ -10,6 +10,8 @@ import UIKit
 
 class UserEventsTableTableViewController: UITableViewController {
 
+    @IBOutlet var listTableView: UITableView!
+    
     let reuseIdentifier = "eventCell"
     var numRows = 5 //Needs to be a dynamically set amount
     //Also need to create an array of events to be sent as items
